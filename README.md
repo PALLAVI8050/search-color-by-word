@@ -1,5 +1,4 @@
-# search-color-by-word
-
+# search-a-color-by-word
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 This project uses Tinycolor npm package to list the color shades
 
@@ -9,3 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 Once the code is compiled successfully, go to localhost:4200
+
+**
+##functionality**
+This app displays the list of color shades in masonry grid layout format when user types a word related to color

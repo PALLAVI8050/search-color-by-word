@@ -1,0 +1,24 @@
+<div>
+  <header class="header-style">Type Word To Get Related ColorShades</header>
+  <div class="flex-box">
+    <input
+      type="text"
+      [(ngModel)]="inputValue"
+      list="availableColors"
+      placeholder="Type a color"
+      name="availableColors"
+      (ngModelChange)="onColorChange()"
+    />
+    <datalist id="availableColors">
+      <option value="{{ color }}" *ngFor="let color of availableColors">
+        {{ color }}
+      </option>
+    </datalist>
+  </div>
+
+  <div id="grid-list">
+    <div *ngFor="let shade of colorShades" [style.background-color]="shade">
+      {{ shade }}
+    </div>
+  </div>
+</div>
